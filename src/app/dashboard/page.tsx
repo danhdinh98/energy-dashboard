@@ -1,8 +1,9 @@
 import styles from "./page.module.css";
+import { Title } from '@mantine/core';
 
 export default function Dashboard() {
     return <main className={styles.main}>
-        <h1>Electricity Usage</h1>
-        <h2>28th of January to 15 February 2024</h2>
+        <Title order={1}>Electricity Usage</Title>
+        <Title order={2} size="h4">28th of January to 15 February 2024</Title>
     </main>
 }
