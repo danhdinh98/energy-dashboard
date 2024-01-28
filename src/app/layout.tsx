@@ -2,11 +2,26 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import '@mantine/core/styles.css';
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, MantineColorsTuple, MantineProvider } from '@mantine/core';
 import { ColorSchemeScript } from '@mantine/core';
 
+const myColor: MantineColorsTuple = [
+  '#eef3ff',
+  '#dce4f5',
+  '#b9c7e2',
+  '#94a8d0',
+  '#748dc1',
+  '#5f7cb8',
+  '#5474b4',
+  '#44639f',
+  '#39588f',
+  '#2d4b81'
+];
+
 const theme = createTheme({
-  /** Put your mantine theme override here */
+  colors: {
+    myColor,
+  }
 });
 
 const inter = Inter({ subsets: ["latin"] });
