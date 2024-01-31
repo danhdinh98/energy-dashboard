@@ -2,27 +2,51 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import '@mantine/core/styles.css';
-import { createTheme, MantineColorsTuple, MantineProvider } from '@mantine/core';
+import { createTheme, MantineProvider, rem } from '@mantine/core';
 import { ColorSchemeScript } from '@mantine/core';
 import { HeaderTabs } from "@/components/HeaderTabs";
 
-const myColor: MantineColorsTuple = [
-  '#eef3ff',
-  '#dce4f5',
-  '#b9c7e2',
-  '#94a8d0',
-  '#748dc1',
-  '#5f7cb8',
-  '#5474b4',
-  '#44639f',
-  '#39588f',
-  '#2d4b81'
-];
-
 const theme = createTheme({
   colors: {
-    myColor,
-  }
+    // Add your color
+    deepBlue: [
+      "#ebefff",
+      "#d5dafc",
+      "#a9b1f1",
+      "#7b87e9",
+      "#5362e1",
+      "#3a4bdd",
+      "#2d3fdc",
+      "#1f32c4",
+      "#182cb0",
+      "#0b259c"
+    ],
+    // or replace default theme color
+    orange: [
+      "#fff8e1",
+      "#ffefcc",
+      "#ffdd9b",
+      "#ffca64",
+      "#ffba38",
+      "#ffb01b",
+      "#ffab09",
+      "#e39500",
+      "#ca8500",
+      "#af7100"
+    ],
+  },
+
+  shadows: {
+    md: '1px 1px 3px rgba(0, 0, 0, .25)',
+    xl: '5px 5px 3px rgba(0, 0, 0, .25)',
+  },
+
+  headings: {
+    fontFamily: 'Roboto, sans-serif',
+    sizes: {
+      h1: { fontSize: rem(36) },
+    },
+  },
 });
 
 const inter = Inter({ subsets: ["latin"] });

@@ -1,5 +1,6 @@
 'use client';
 
+import { useMantineTheme } from '@mantine/core';
 import Link from 'next/link';
 import {
     Container,
@@ -13,6 +14,7 @@ const tabs = [
 ];
 
 export function HeaderTabs() {
+    const theme = useMantineTheme();
     const items = tabs.map((tab) => (
         <Link href={tab.route} style={{ textDecoration: 'none', color: 'black' }}>
             <Tabs.Tab value={tab.label} key={tab.label}>
@@ -23,8 +25,8 @@ export function HeaderTabs() {
     ));
 
     return (
-        <div className={classes.header}>
-            <Container size="md">
+        <div className={classes.header} style={{ background: theme.colors.orange[4] }} >
+            <Container size="md"  >
                 <Tabs
                     defaultValue="Home"
                     variant="outline"
@@ -38,6 +40,6 @@ export function HeaderTabs() {
                     <Tabs.List>{items}</Tabs.List>
                 </Tabs>
             </Container>
-        </div>
+        </div >
     );
 }
