@@ -4,6 +4,7 @@ import "./globals.css";
 import '@mantine/core/styles.css';
 import { createTheme, MantineColorsTuple, MantineProvider } from '@mantine/core';
 import { ColorSchemeScript } from '@mantine/core';
+import { HeaderTabs } from "@/components/HeaderTabs";
 
 const myColor: MantineColorsTuple = [
   '#eef3ff',
@@ -50,6 +51,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <MantineProvider theme={theme}>
+          <HeaderTabs />
           {children}
         </MantineProvider>
       </body>
