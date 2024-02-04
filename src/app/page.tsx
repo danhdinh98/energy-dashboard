@@ -5,6 +5,6 @@ export default function Home() {
   return <div className={styles.home}>
     <Title order={1}>Homepage</Title>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    <Button color="deepBlue" className="read">READ MORE</Button>
+    <Button color="deepBlue">READ MORE</Button>
   </div>
 }
