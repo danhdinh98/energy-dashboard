@@ -2,4 +2,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 300px;
+}
+
+.read {
+  width: 100px;
 }
