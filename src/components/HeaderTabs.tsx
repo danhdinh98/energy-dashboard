@@ -11,6 +11,7 @@ import classes from './HeaderTabs.module.css';
 const tabs = [
     { label: 'Home', route: '/' },
     { label: 'Dashboard', route: '/dashboard' },
+    { label: 'Billing', route: '/billing' }
 ];
 
 export function HeaderTabs() {
