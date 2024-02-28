@@ -1,46 +1,23 @@
 'use client';
-
-import { useMantineTheme } from '@mantine/core';
 import Link from 'next/link';
-import {
-    Container,
-    Tabs,
-} from '@mantine/core';
-import classes from './HeaderTabs.module.css';
-
-const tabs = [
-    { label: 'Home', route: '/' },
-    { label: 'Dashboard', route: '/dashboard' },
-    { label: 'Billing', route: '/billing' }
-];
 
 export function HeaderTabs() {
-    const theme = useMantineTheme();
-    const items = tabs.map((tab) => (
-        <Link href={tab.route} style={{ textDecoration: 'none', color: 'black' }}>
-            <Tabs.Tab value={tab.label} key={tab.label}>
-                {tab.label}
-            </Tabs.Tab>
-        </Link>
-
-    ));
-
     return (
-        <div className={classes.header} style={{ background: theme.colors.orange[4] }} >
-            <Container size="md"  >
-                <Tabs
-                    defaultValue="Home"
-                    variant="outline"
-                    visibleFrom="sm"
-                    classNames={{
-                        root: classes.tabs,
-                        list: classes.tabsList,
-                        tab: classes.tab,
-                    }}
-                >
-                    <Tabs.List>{items}</Tabs.List>
-                </Tabs>
-            </Container>
+        <div style={{ position: 'relative', zIndex: '999', display: 'flex', justifyContent: 'space-between', background: 'linear-gradient(90deg, rgba(0,198,141,1) 0%, rgba(10,179,169,1) 27%, rgba(28,193,156,0.6601234243697479) 77%)', height: '80px', alignItems: 'center', }}>
+            <div style={{ display: 'flex' }}></div>
+            <div style={{ display: 'flex' }}>
+                <Link href={'/'} style={{ textDecoration: 'none', color: 'black', marginRight: '30px', color: 'white', fontFamily: 'sans-serif' }}>
+                    {'Home'}
+                </Link >
+                <Link href={'/dashboard'} style={{ textDecoration: 'none', color: 'black', marginRight: '30px', color: 'white', fontFamily: 'sans-serif' }}>
+                    {'Dashboard'}
+                </Link >
+                <Link href={'/billing'} style={{ textDecoration: 'none', color: 'black', marginRight: '30px', color: 'white', fontFamily: 'sans-serif' }}>
+                    {'Billing'}
+                </Link >
+
+
+            </div>
         </div >
     );
 }
