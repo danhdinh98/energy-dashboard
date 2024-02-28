@@ -1,10 +1,8 @@
-import { Button, Flex, Title } from "@mantine/core";
-import styles from "./page.module.css";
-import Background from '../assets/grad-header.png';
+import { Button, Title } from "@mantine/core";
 
 export default function Home() {
-  return <div className={styles.home}>
-    <div style={{ minHeight: '700px' }}>
+  return <div>
+    <div style={{ minHeight: '700px', background: 'linear-gradient(90deg, rgba(0, 198, 141, 1) 0%, rgba(10, 179, 169, 1) 27%, rgba(28, 193, 156, 0.6601234243697479) 77%)', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
       <div className="Intro-top" style={{ height: '600px' }}>
         <div className="Intro-top-wrapper" style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div className="Logo">
@@ -16,24 +14,24 @@ export default function Home() {
             </svg>
           </div>
         </div>
-        <div className="Intro-bottom" style={{ width: '100%', position: 'absolute', bottom: '-5px', left: '50%', transform: 'translateX(-50%)', display: 'block', minWidth: '1400px' }}>
+        <div className="Intro-bottom" style={{ width: '100%', position: 'absolute', bottom: '10px', left: '50%', transform: 'translateX(-50%)', display: 'block', minWidth: '1400px' }}>
           <svg width="100%" height="274" viewBox="0 0 1440 274" fill="none" xmlns="http://www.w3.org/2000/svg" className="header-mask" preserveAspectRatio="none">
-            <path d="M333 69.5C167.992 77.6305 24 186.167 -47 258V273.5H1488V0C1363 175 1230 179.5 1133.5 187C856.5 187 617 55.5063 333 69.5Z" fill="#F0F0F0"></path>
+            <path d="M333 69.5C167.992 77.6305 24 186.167 -47 258V273.5H1488V0C1363 175 1230 179.5 1133.5 187C856.5 187 617 55.5063 333 69.5Z" fill="white"></path>
           </svg>
         </div>
         {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> */}
-        <div className="Button-fast-scroll" style={{ display: 'flex', justifyContent: 'center', marginTop: '-200px' }}>
+        <div className="Button-fast-scroll" style={{ display: 'flex', justifyContent: 'center', marginTop: '-240px' }}>
           <Button style={{ backgroundColor: 'Transparent', backgroundRepeat: 'no-repeat', border: 'none', cursor: 'pointer', overflow: 'hidden' }}>Learn more about us</Button>
         </div>
       </div>
     </div>
-    <div className="Review-section">
-      <div className="paragraph">
+    <div className="Review-section" style={{ height: '845px', display: 'flex', justifyContent: 'space-evenly' }}>
+      <div className="paragraph" style={{ maxWidth: '550px' }}>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet convallis risus. Vestibulum volutpat rhoncus scelerisque. Phasellus fringilla, nisi sit amet aliquet pharetra, dolor orci cursus leo, eget luctus risus est a risus. Nullam molestie orci odio, a interdum nunc consequat at. Integer auctor est sed metus pulvinar facilisis. Phasellus vel dictum urna, ut ullamcorper diam. Aenean nec risus id justo luctus sollicitudin at quis odio. Vivamus efficitur eu lorem sed sagittis. Duis sed ex at mi egestas fringilla. Sed placerat dolor quis mi ultricies, nec blandit elit dictum.</p>
       </div>
       <div className="Slider">
-
+        <p>sds</p>
       </div>
     </div>
-  </div>
+  </div >
 }
