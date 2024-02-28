@@ -10,7 +10,6 @@ interface SummaryTableProps {
 export default function SummaryTable(props: SummaryTableProps) {
     const totalCostCents = props.usageData.totalKwh * props.usageData.conversionCentsPerKwh;
     const totalCostDollars = totalCostCents / 100;
-    console.log(props.usageData);
     return (
         <Table withTableBorder={true} borderColor="#FF9C9C" withColumnBorders={true}>
             <Table.Thead>
