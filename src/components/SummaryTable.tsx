@@ -1,6 +1,7 @@
 'use client';
 
 import UsageData from "@/app/types/UsageData";
+import roundTwoDec from "@/util/roundtwodec";
 import { Table } from "@mantine/core";
 
 interface SummaryTableProps {
@@ -10,6 +11,10 @@ interface SummaryTableProps {
 export default function SummaryTable(props: SummaryTableProps) {
     const totalCostCents = props.usageData.totalKwh * props.usageData.conversionCentsPerKwh;
     const totalCostDollars = totalCostCents / 100;
+    const roundedCost = roundTwoDec(totalCostDollars)
+    const roundedTotalKwh = roundTwoDec(props.usageData.totalKwh)
+    const roundedAverageDailyKwh = roundTwoDec(props.usageData.averageDailyKwh)
+    const roundedConversionCentsPerKwh = roundTwoDec(props.usageData.conversionCentsPerKwh)
     return (
         <Table withTableBorder={true} borderColor="#FF9C9C" withColumnBorders={true}>
             <Table.Thead>
@@ -22,10 +27,10 @@ export default function SummaryTable(props: SummaryTableProps) {
             </Table.Thead>
             <Table.Tbody>
                 <Table.Tr>
-                    <Table.Td>{`${props.usageData.totalKwh}`}</Table.Td>
-                    <Table.Td>{`${props.usageData.averageDailyKwh}`}</Table.Td>
-                    <Table.Td>{`${props.usageData.conversionCentsPerKwh}`}</Table.Td>
-                    <Table.Td>{`$${totalCostDollars}`}</Table.Td>
+                    <Table.Td>{`${roundedTotalKwh}`}</Table.Td>
+                    <Table.Td>{`${roundedAverageDailyKwh}`}</Table.Td>
+                    <Table.Td>{`${roundedConversionCentsPerKwh}`}</Table.Td>
+                    <Table.Td>{`$${roundedCost}`}</Table.Td>
                 </Table.Tr>
             </Table.Tbody>
         </Table>
