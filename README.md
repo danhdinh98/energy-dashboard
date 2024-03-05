@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [ ] option to see monthly, daily or yearly usage
 - [x] too many decimals
 - [ ] bills for each month 
-- [ ] date hard to read
+- [x] date hard to read
 - [ ] present each point in a card
 - [ ] merge total cost with conversion
 - [x] put axis labels on monthly electricity usage bar chart

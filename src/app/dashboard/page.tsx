@@ -9,7 +9,6 @@ export default function Dashboard() {
     return <main className={styles.main}>
         <Title order={1}>Electricity Usage</Title>
         <div className="february-data" style={{ backgroundColor: 'white', borderRadius: '20px', padding: '30px', width: '100%' }}>
-            <Title order={2} size="h4">{`${testData.startDate} to ${testData.endDate}`}</Title>
             <SummaryTable usageData={testData} />
         </div>
         <div className="top" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', backgroundColor: 'white', borderRadius: '20px', padding: '30px', marginTop: '30px', width: '100%' }}>
