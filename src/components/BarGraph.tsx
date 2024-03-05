@@ -20,10 +20,11 @@ export default function BarGraph(props: BarGraphProps) {
     return (
         <>
             <BarChart
-                xAxis={[{ scaleType: 'band', data: dates }]}
+                xAxis={[{ scaleType: 'band', data: dates, label: 'Days' }]}
                 series={[{ data: totalKwhValues }]}
-                width={700}
                 height={300}
+                yAxis={[{ label: 'Electricity Usage (kwh)' }]}
+
             />
         </>
 
