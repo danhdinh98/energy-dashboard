@@ -6,7 +6,7 @@ export default function Home() {
       <div className="Intro-top" style={{ height: '600px' }}>
         <div className="Intro-top-wrapper" style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div className="Logo">
-            <Title order={1} style={{ maxWidth: '200px', color: 'white', fontFamily: 'Arial', fontSize: '50px', paddingLeft: '50px', paddingTop: '100px' }}>Danhs Electricity Dashboard</Title>
+            <Title order={1} style={{ maxWidth: '200px', color: 'white', fontFamily: 'Arial', fontSize: '50px', paddingLeft: '50px', paddingTop: '100px' }}>Danhs Website Electricity Dashboard</Title>
           </div>
           <div className="Leaf-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772 978" fill="none" width="600px" style={{ fill: 'none', overflowClipMargin: 'content-box', overflow: 'hidden', marginTop: '-90px', }}>

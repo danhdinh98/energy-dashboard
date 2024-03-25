@@ -11,6 +11,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Deployment
+
+This project is deployed to: https://energy-dashboard-omega.vercel.app/
+
 ## TO DO:
 - [ ] add ability to cycle between previous and future months
     - [ ] add projections of future costs i.e. using current hourly usage
