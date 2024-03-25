@@ -2,7 +2,7 @@
 
 import UsageData from "@/app/types/UsageData";
 import convertDate from "@/util/convertDate";
-import roundTwoDec from "@/util/roundtwodec";
+import roundTwoDec from "@/util/roundTwoDec";
 import { Table, Title } from "@mantine/core";
 
 interface SummaryTableProps {

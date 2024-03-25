@@ -12,7 +12,8 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## TO DO:
-- [ ] add projections of future costs i.e. using current hourly usage
+- [ ] add ability to cycle between previous and future months
+    - [ ] add projections of future costs i.e. using current hourly usage
 - [ ] set up automatically deployers to the internet
 - [ ] option to see monthly, daily or yearly usage
 - [x] too many decimals
@@ -21,4 +22,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [ ] present each point in a card
 - [ ] merge total cost with conversion
 - [x] put axis labels on monthly electricity usage bar chart
+- [ ] put emphasis on total cost 
+- [ ] add basic trail to homepage
+
+
 
