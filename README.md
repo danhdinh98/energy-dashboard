@@ -18,7 +18,7 @@ This project is deployed to: https://energy-dashboard-omega.vercel.app/
 ## TO DO:
 - [ ] add ability to cycle between previous and future months
     - [ ] add projections of future costs i.e. using current hourly usage
-- [ ] set up automatically deployers to the internet
+- [x] set up automatically deployers to the internet
 - [ ] option to see monthly, daily or yearly usage
 - [x] too many decimals
 - [ ] bills for each month 
